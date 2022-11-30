@@ -113,6 +113,9 @@ body{
         top: 10%;
         
     }
+    .strelka::after{
+        top: -3%;
+    }
 }
 
 
