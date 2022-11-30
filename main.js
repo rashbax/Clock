@@ -40,7 +40,7 @@ let d = 270
         let audio = new Audio('tic.mp3')
         let secon = data.getSeconds()
         $('.strelka').css({'transform':'rotate('+ secon *6+  'deg)'})
-         audio.play()
+        // audio.play()
     }
     setInterval(roundClock,1000)
     
