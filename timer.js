@@ -21,7 +21,7 @@ $(document).ready(function(){
         }
         $('.content__timer').html(hh +':' + mm + ':' + ss)
         
-        if (ss == 60) {
+        if (ss == 100) {
             ss = 0;
             mm ++;
         } 
@@ -56,6 +56,6 @@ $(document).ready(function(){
 
     
 
-setInterval(playTimer,0)
+setInterval(playTimer,10)
     
 })
