@@ -26,9 +26,9 @@ $(document).ready(function(){
     let yy = data.getFullYear()
     console.log(data.getMonth());
 
-    // (dd < 10) ? dd = '0'+ dd : dd;
-    // (mm < 10) ? mm = '0' + mm : mm;
-    // (yy < 10) ? yy = '0' + yy : yy;
+     (dd < 10) ? dd = '0'+ dd : dd;
+     (mm < 10) ? mm = '0' + mm : mm;
+     (yy < 10) ? yy = '0' + yy : yy;
 
     let showDate = dd +':'+ mm + ':' + yy
     $('.date').html(showDate)
