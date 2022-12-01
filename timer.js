@@ -4,15 +4,16 @@ $(document).ready(function(){
     let mm = 0;
     let ss = 0;
 
-    // (hh < 10) ? hh = '0'+ hh : hh ;
-    // (mm < 10) ? mm = '0'+ mm : mm;
-    // (ss < 10) ? ss = '0' + ss : ss ;
 
     $('.content__timer').html(hh +':' + mm + ':' + ss)
 
     let isPaused = false;
 
     function playTimer() {
+        
+        (mm < 10) ? mm = '0'+ Number(mm) : mm;
+       (hh < 10) ? hh = '0'+ Number(hh) :hh ;
+     (ss < 10) ? ss = '0' + Number(ss) : ss ;
         
         if (isPaused === false) {
             ss==ss;
